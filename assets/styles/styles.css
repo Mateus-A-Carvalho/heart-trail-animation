@@ -1,3 +1,9 @@
+:root {
+  --bdrs: 100%;
+  --Xposition: 50%;
+  --Yposition: 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +18,17 @@ html {
 
 body {
   height: 100%;
+  background-color: rgba(10, 0, 24, 1);
 }
+
+span {
+  background-color: yellowgreen;
+  width: 0;
+  height: 0;
+  position: absolute;
+  background-size: cover;
+  top: var(--Yposition);
+  left: var(--Xposition);
+  transform: translate(-50%, -50%);
+  border-radius: var(--bdrs)
+}  
