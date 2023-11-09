@@ -1,3 +1,9 @@
+:root {
+  --bdrs: 100%;
+  --Xposition: 50%;
+  --Yposition: 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,12 +22,14 @@ body {
 }
 
 span {
-  background: url("../img/icons/israel-icon.png");
-  width: 10rem;
-  height: 10rem;
+  background-color: yellowgreen;
+  width: 0;
+  height: 0;
   position: absolute;
   background-size: cover;
-  top: 50%;
-  left: 50%;
+  top: var(--Yposition);
+  left: var(--Xposition);
   transform: translate(-50%, -50%);
+  border-radius: var(--bdrs)
+  
 }
