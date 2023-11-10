@@ -9,3 +9,4 @@ document.addEventListener("click", (e) => {
   spanEl.style.setProperty("--Xposition", `${X}px`)  
   spanEl.style.setProperty("--Yposition", `${Y}px`)  
 })
+

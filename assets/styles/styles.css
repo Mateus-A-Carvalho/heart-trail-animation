@@ -30,6 +30,18 @@ span {
   top: var(--Yposition);
   left: var(--Xposition);
   transform: translate(-50%, -50%);
-  border-radius: var(--bdrs)
-  
+  border-radius: var(--bdrs);
+  animation: up .1s infinite;
+}
+
+
+@keyframes up {
+  from{ 
+    position: absolute;
+    top: 50%;
+   }
+  to{
+    position: absolute;
+    top: 0%;
+   }
 }
