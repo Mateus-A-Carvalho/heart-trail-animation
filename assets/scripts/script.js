@@ -1,12 +1,23 @@
 const spanEl = document.querySelector('#spanEl')
+const bodyEl = document.querySelector('body');
 
-document.addEventListener("click", (e) => {
-  let X = e.pageX;
-  let Y = e.pageY;
 
-  spanEl.style.width = "10rem"
-  spanEl.style.height = "10rem"
+document.addEventListener("mousemove", (e) => {
+  let X = e.clientX;
+  let Y = e.clientY;
+
+  spanEl.style.width = "5rem"
+  spanEl.style.height = "5rem"
   spanEl.style.setProperty("--Xposition", `${X}px`)  
   spanEl.style.setProperty("--Yposition", `${Y}px`)  
+
+  console.log(X, Y);
 })
 
+function createElement() {
+  const newElement = document.createElement('div');
+  bodyEl.appendChild(newElement);
+  
+}
+
+createElement()
