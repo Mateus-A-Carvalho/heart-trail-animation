@@ -26,22 +26,21 @@ span {
   width: 0;
   height: 0;
   position: absolute;
+  pointer-events: none;
   background-size: cover;
   top: var(--Yposition);
   left: var(--Xposition);
   transform: translate(-50%, -50%);
   border-radius: var(--bdrs);
-  animation: up .25s infinite;
+  animation: up 1s infinite;
 }
 
 
 @keyframes up {
   from{ 
-    position: absolute;
-    top: 50%;
+    transform: translate(-50%, -50%);
    }
   to{
-    position: absolute;
-    top: -300px;
+    transform: translate(-50%, -5000%);
    }
 }
