@@ -1,5 +1,5 @@
 :root {
-  --bdrs: 100%;
+  --bdrs: 20%;
 }
 
 * {
@@ -17,6 +17,7 @@ html {
 body {
   height: 100%;
   background-color: rgba(10, 0, 24, 1);
+  overflow: hidden;
 }
 
 span {
