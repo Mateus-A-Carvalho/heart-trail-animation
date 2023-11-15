@@ -21,7 +21,7 @@ body {
 }
 
 span {
-  background: url('../img/ave_christus_rex.png');
+  background: url("../img/ave_christus_rex.png");
   width: 0rem;
   height: 0rem;
   position: absolute;
