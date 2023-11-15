@@ -13,7 +13,7 @@ bodyEl.addEventListener("mousemove", (e) => {
   jerusalemKingdom.style.left = `${X}px`;
   jerusalemKingdom.style.width = `${size}px`;
   jerusalemKingdom.style.height = `${size}px`;
-
+  
   setTimeout(()=> {
     jerusalemKingdom.remove();
   }, 3000)
