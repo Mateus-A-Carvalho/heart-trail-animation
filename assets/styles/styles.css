@@ -1,7 +1,5 @@
 :root {
   --bdrs: 100%;
-  --Xposition: 50%;
-  --Yposition: 50%;
 }
 
 * {
@@ -22,25 +20,27 @@ body {
 }
 
 span {
-  background-color: yellowgreen;
-  width: 0;
-  height: 0;
+  background: url('../img/ave_christus_rex.png');
+  width: 0rem;
+  height: 0rem;
   position: absolute;
-  pointer-events: none;
   background-size: cover;
-  top: var(--Yposition);
-  left: var(--Xposition);
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   border-radius: var(--bdrs);
-  animation: up 1s infinite;
-}
+  animation: upAnimation 6s linear;
+  }
 
+  @keyframes upAnimation {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
 
-@keyframes up {
-  from{ 
-    transform: translate(-50%, -50%);
-   }
-  to{
-    transform: translate(-50%, -5000%);
-   }
-}
+    100% {
+      transform: translate(-50%, -5000%);
+      opacity: 0;
+    }
+  }
